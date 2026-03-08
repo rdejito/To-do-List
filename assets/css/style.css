@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.topIcons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; /* Space between icons */
+}
+
+.topIcons img {
+    width: 42px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.topIcons img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    padding: 10px 20px;
+    color: #333;
+}
+
+h1 span img {
+    width: 24px;
+    vertical-align: middle;
+}
+
+/* Add task style */
+#addTask {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 392px;
+    max-width: 733px;
+    margin: 50px auto; /* Center it */
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Input and Button Styling */
+#addTask label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#addTask input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#addTask button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+}
+
+#addTask button:hover {
+    background-color: #0056b3;
+}
+
+#addTask button:last-child {
+    background-color: #28a745; /* Green for save */
+}
+
+#addTask button:last-child:hover {
+    background-color: #218838;
+}
+
+/* Utility class to hide the form */
+.hidden {
+    display: none;
+}
