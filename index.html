@@ -26,19 +26,19 @@
                 <label for="taskInput">What to do?</label><br>
                 <input type="text" name="task" id="taskInput" placeholder="Enter task here..."><br>
                 
-                <button onclick="setAlarm()">
+                <button onclick="setAlarm()" id="alarmBtn">
                     Set alert
                     <span><img src="assets/icons/clock-icon.svg" alt="Clock icon"></span>
                 </button><br>
                 
                 <div class="button-group">
-                    <button onclick="toggleAddTask()">Cancel</button>
-                    <button onclick="saveBtn()">Save</button>
+                    <button onclick="toggleAddTask()" class="confirmBtns">Cancel</button>
+                    <button onclick="saveBtn()" class="confirmBtns">Save</button>
                 </div>
             </div>
         </div>
     </main>
     <!-- Link to your JS file here -->
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/index.js" defer></script>
 </body>
 </html>

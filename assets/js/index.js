@@ -1,9 +1,13 @@
 // Function to toggle the Add Task form visibility
 function toggleAddTask() {
     const addTaskDiv = document.getElementById('addTask');
-    addTaskDiv.classList.toggle('hidden');
-}
 
+    if (getComputedStyle(addTaskDiv).display === "none") {
+        addTaskDiv.style.display = "flex";
+    } else {
+        addTaskDiv.style.display = "none";
+    }
+}
 // Function to save the task (Placeholder logic)
 function saveBtn() {
     const taskInput = document.getElementById('taskInput');

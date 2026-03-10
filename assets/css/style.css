@@ -75,30 +75,39 @@ h1 span img {
     font-size: 1rem;
 }
 
-#addTask button {
-    padding: 10px 20px;
-    margin: 5px;
+#alarmBtn{
+    border-radius: 20px;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 21px;
     cursor: pointer;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: white;
 }
 
-#addTask button:hover {
-    background-color: #0056b3;
+#alarmBtn span img{
+    width: 16px;
+    margin: 0;
 }
 
-#addTask button:last-child {
-    background-color: #28a745; /* Green for save */
+.button-group{
+    padding: 25px 0;
 }
 
-#addTask button:last-child:hover {
-    background-color: #218838;
+.confirmBtns{
+    padding: 7px 10px;
+    margin: 0px 50px;
+    background: none;
+    border: none;
+    font-size: large;
+    text-align: inherit;
+    cursor: pointer;
+    color: hsl(0, 0%, 29%);
+    transition: color 0.3s;
 }
 
+.confirmBtns:hover{
+    color: hsl(0, 0%, 0%);
+}
 /* Utility class to hide the form */
-.hidden {
+#addTask.hidden {
     display: none;
 }
