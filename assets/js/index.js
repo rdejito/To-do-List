@@ -19,7 +19,9 @@ function saveBtn() {
     }
 
     // Here you would normally add the task to a list
-    console.log("Task Saved: " + taskText);
+    //console.log("Task Saved: " + taskText);
+    let getTask = document.getElementById('taskContent');
+    getTask.textContent = taskText;
     
     // Clear input and hide form
     taskInput.value = "";
