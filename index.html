@@ -1,48 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do List</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <div class="topIcons">
-                <!-- Added IDs for easier JS targeting -->
-                <img src="assets/icons/addTask-icon.svg" alt="Add task icon" id="addTaskIcon" onclick="toggleAddTask()">
-                <img src="assets/icons/theme-light-icon.svg" alt="Theme mode" onclick="colorTheme()">
-                <img src="assets/icons/sort-icon.svg" alt="Sort menu" onclick="sortMenu()">
-            </div>
-            <h1>To do 
-                <span>
-                    <img src="assets/icons/check-icon.svg" alt="Checklist icon">
-                </span>
-            </h1>
-
-            <div class="taskBox">
-                <p id="taskContent"></p>
-            </div>
-            
-            <!-- This form is hidden by default -->
-            <div id="addTask" class="hidden">
-                <label for="taskInput">What to do?</label><br>
-                <input type="text" name="task" id="taskInput" placeholder="Enter task here..."><br>
-                
-                <button onclick="setAlarm()" id="alarmBtn">
-                    Set alert
-                    <span><img src="assets/icons/clock-icon.svg" alt="Clock icon"></span>
-                </button><br>
-                
-                <div class="button-group">
-                    <button onclick="toggleAddTask()" class="confirmBtns">Cancel</button>
-                    <button onclick="saveBtn()" class="confirmBtns">Save</button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="topIcons">
+          <!-- Added IDs for easier JS targeting -->
+          <img
+            src="assets/icons/addTask-icon.svg"
+            alt="Add task icon"
+            id="addTaskIcon"
+            onclick="toggleAddTask()"
+          />
+          <img
+            src="assets/icons/theme-light-icon.svg"
+            alt="Theme mode"
+            onclick="colorTheme()"
+          />
+          <img
+            src="assets/icons/sort-icon.svg"
+            alt="Sort menu"
+            onclick="sortMenu()"
+          />
         </div>
+        <h1>
+          To do
+          <span>
+            <img src="assets/icons/check-icon.svg" alt="Checklist icon" />
+          </span>
+        </h1>
+
+        <div class="taskBox">
+          <p id="taskContent"></p>
+        </div>
+
+        <!-- This form is hidden by default -->
+        <div id="addTask" class="hidden absolute">
+          <label for="taskInput">What to do?</label><br />
+          <input
+            type="text"
+            name="task"
+            id="taskInput"
+            placeholder="Enter task here..."
+          /><br />
+
+          <button type="button" onclick="setAlarm()" id="alarmBtn">
+            Set alert
+            <span
+              ><img src="assets/icons/clock-icon.svg" alt="Clock icon"
+            /></span></button
+          ><br />
+
+          <div class="button-group">
+            <button type="button" onclick="toggleAddTask()" class="confirmBtns">
+              Cancel
+            </button>
+            <button type="button" onclick="saveBtn()" class="confirmBtns">Save</button>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Link to your JS file here -->
     <script src="assets/js/index.js" defer></script>
-</body>
+  </body>
 </html>

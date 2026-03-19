@@ -1,113 +1,130 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light background */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light background */
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .topIcons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px; /* Space between icons */
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px; /* Space between icons */
 }
 
 .topIcons img {
-    width: 42px;
-    cursor: pointer;
-    transition: transform 0.2s;
+  width: 42px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .topIcons img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 h1 {
-    padding: 10px 20px;
-    color: #333;
+  padding: 10px 20px;
+  color: #333;
 }
 
 h1 span img {
-    width: 24px;
-    vertical-align: middle;
+  width: 24px;
+  vertical-align: middle;
+}
+
+/*Task style*/
+.taskBox {
+  border: 1px solid #000;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px 10px;
+}
+
+#taskContent {
+  margin-left: 10px;
 }
 
 /* Add task style */
 #addTask {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 392px;
-    max-width: 733px;
-    margin: 50px auto; /* Center it */
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 392px;
+  max-width: 733px;
+  margin: 50px auto; /* Center it */
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 /* Input and Button Styling */
 #addTask label {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 #addTask input {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-#alarmBtn{
-    border-radius: 20px;
-    border: none;
-    padding: 10px 20px;
-    font-size: 21px;
-    cursor: pointer;
+#alarmBtn {
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 21px;
+  cursor: pointer;
 }
 
-#alarmBtn span img{
-    width: 16px;
-    margin: 0;
+#alarmBtn span img {
+  width: 16px;
+  margin: 0;
 }
 
-.button-group{
-    padding: 25px 0;
+.button-group {
+  padding: 25px 0;
 }
 
-.confirmBtns{
-    padding: 7px 10px;
-    margin: 0px 50px;
-    background: none;
-    border: none;
-    font-size: large;
-    text-align: inherit;
-    cursor: pointer;
-    color: hsl(0, 0%, 29%);
-    transition: color 0.3s;
+.confirmBtns {
+  padding: 7px 10px;
+  margin: 0px 50px;
+  background: none;
+  border: none;
+  font-size: large;
+  text-align: inherit;
+  cursor: pointer;
+  color: hsl(0, 0%, 29%);
+  transition: color 0.3s;
 }
 
-.confirmBtns:hover{
-    color: hsl(0, 0%, 0%);
+.confirmBtns:hover {
+  color: hsl(0, 0%, 0%);
 }
 /* Utility class to hide the form */
 #addTask.hidden {
-    display: none;
+  display: none;
+}
+
+/*Additional styling*/
+#addTask.absolute {
+  display: absolute;
 }
